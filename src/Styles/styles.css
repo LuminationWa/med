@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.desktop-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: block;
+}
+
+a {
+  transition: all ease 0.25s;
+  opacity: 0.75;
+}
+a:hover {
+  opacity: 1;
+}
+
+.lang-btn {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
+  opacity: 0.75;
+}
+.lang-btn:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  nav .main-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .desktop-nav {
+    display: flex;
+    gap: 1.25rem;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-size: clamp(1.13rem, 1.08rem + 0.22vw, 1.25rem);
+  font-family: "Lato", sans-serif;
+  color: #292929;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  height: 100svh;
+}
+
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  text-wrap: balance;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  width: min(100% - 3rem, 65ch);
+  margin-inline: auto;
+}
+
+.flow > *:not(:first-child) {
+  margin-top: 0.25rem;
+}
+
+.h1 {
+  font-size: clamp(2.1rem, 2rem + 1.2vw, 3rem);
+  line-height: 1.1;
+  text-wrap: balance;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=styles.css.map */
