@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "variables";
 @import "nav";
+@import "contacto";
 
 * {
     box-sizing: border-box;
@@ -17,6 +18,7 @@ body {
     background-color: $background-color-400;
     height: 100vh;
     height: 100svh;
+    color: $primary-color-400;
 }
 
 #root,
@@ -54,4 +56,8 @@ h3 {
     line-height: 1.1;
     text-wrap: balance;
     font-weight: bolder;
+}
+
+.margin-top {
+    margin-top: 1rem;
 }
