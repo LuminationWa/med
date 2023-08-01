@@ -8,11 +8,41 @@
 }
 
 a {
-  transition: all ease 0.25s;
+  transition: opacity 0.25s;
+  opacity: 0.75;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  padding: 10px;
+}
+a::before, a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.25s ease-out;
+  opacity: 0.75;
+}
+a::before {
+  transform: translateX(-50%);
+  opacity: 0.75;
+}
+a::after {
+  transform: translateX(-50%);
   opacity: 0.75;
 }
 a:hover {
   opacity: 1;
+}
+a:hover::before {
+  width: 15%;
+}
+a:hover::after {
+  width: 45%;
 }
 
 .lang-btn {
@@ -59,15 +89,25 @@ a:hover {
   padding: 1rem 0 1rem 0;
   flex-grow: 1;
 }
+.contacto-main .media-multi {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  padding-bottom: 0;
+  gap: 0.5rem;
+}
 .contacto-main .contacto-form {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 1rem;
+  padding-top: 0;
 }
 .contacto-main .media-info {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  padding-left: 0;
 }
 .contacto-main .media-info .media-div {
   display: flex;
@@ -75,12 +115,13 @@ a:hover {
   gap: 0.5rem;
   font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
 }
-.contacto-main .media-info .media-multi {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
 
+@media (min-width: 768px) {
+  .contacto-main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;

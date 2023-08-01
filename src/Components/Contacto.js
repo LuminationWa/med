@@ -17,36 +17,37 @@ const Contacto = () => {
         <main className="contacto-main">
             <h1 className="h1">Contacto</h1>
 
+            <div className="media-div media-multi">
+                <InstagramIcon fontSize='small' />
+                <FacebookIcon fontSize='small' />
+                <TwitterIcon fontSize='small' />
+            </div>
+
             <form className="contacto-form" action="mailto:example@gmail.com" method="post" encType="text/plain">
-                <TextField required id="standard-basic" label="Nombre" variant="standard" />
-                <TextField required id="standard-basic" label="Correo" variant="standard" />
-                <TextField id="standard-basic" label="Telefono" variant="standard" />
-                <TextField required id="standard-basic" label="Mensaje" variant="standard" />
+                <TextField required id="nombre" label="Nombre" variant="standard" />
+                <TextField required id="correo" label="Correo" variant="standard" />
+                <TextField id="telefono" label="Telefono" variant="standard" />
+                <TextField multiline rows={3} required id="mensaje" label="Mensaje" variant="standard" />
                 <Button variant="contained" style={buttonStyle}>
                     Enviar
                 </Button>
 
             </form>
             <div className="media-info wrapper">
-                <div className="media-div media-multi">
-                    <InstagramIcon fontSize='small'/>
-                    <FacebookIcon fontSize='small'/>
-                    <TwitterIcon fontSize='small'/>
-                </div>
                 <div className="media-div">
-                    <NearMeIcon/>
+                    <NearMeIcon />
                     Av. Garibaldi 2185
                 </div>
                 <div className="media-div">
-                    <EmailIcon/>
+                    <EmailIcon />
                     example@gmail.com
                 </div>
                 <div className="media-div">
-                    <RingVolumeIcon/>
+                    <RingVolumeIcon />
                     +598 22039306
                 </div>
                 <div className="media-div">
-                    <WhatsAppIcon/>
+                    <WhatsAppIcon />
                     +598 92756666
                 </div>
             </div>

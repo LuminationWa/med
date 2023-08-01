@@ -5,26 +5,40 @@
     padding: 1rem 0 1rem 0;
     flex-grow: 1;
 
+    .media-multi {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        padding-bottom: 0;
+        gap: 0.5rem;
+    }
 
     .contacto-form {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 1rem;
+        padding-top: 0;
     }
+
     .media-info {
         display: flex;
         flex-direction: column;
+        padding: 1rem;
+        padding-left: 0;
+
         .media-div {
             display: flex;
             align-items: center;
             gap: 0.5rem;
             font-size: $fs-1;
         }
-        .media-multi {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .contacto-main {
+        max-width: 800px;
+        margin: 0 auto;
     }
 }
