@@ -1,6 +1,6 @@
 //Font
 $font-family-1: 'Lato', sans-serif;
-$font-family-2: "Merriweather", serif;
+$font-family-2: 'Montserrat', sans-serif;
 $fs-2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.8rem);
 $fs-1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1rem);
 $fs0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
@@ -11,10 +11,10 @@ $fs4: clamp(2.1rem, calc(2rem + 1.20vw), 3rem);
 $fs5: clamp(2.8rem, calc(2.45rem + 1.77vw), 3.82rem);
 
 //Colors
-$primary-color-400: #e6e6e6;
+$primary-color-400: #e3dddd;
 $primary-color-300: hsl(357, 68%, 35%);
-$secondary-color-400: #023E8A;
-$accent-color-400: #3e5fb6;
+$secondary-color-400: #2c415f;
+$accent-color-400: #cffef9;
 $background-color-400: #ffffff;
 $background-color-500: hsla(357, 69%, 90%, 0.851);
 $text-color: #292929;

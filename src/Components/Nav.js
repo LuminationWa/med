@@ -4,10 +4,10 @@ import { Link, useNavigate } from "react-router-dom";
 const Nav = () => {
     return (
         <nav className="wrapper">
-            <button className="lang-btn">
+            {/* <button className="lang-btn">
                 <LanguageIcon fontSize='small'/>
                 Es
-            </button>
+            </button> */}
             <div className="main-nav">
                 <Link to="/">
                     <h1>

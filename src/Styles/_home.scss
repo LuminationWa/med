@@ -1,0 +1,85 @@
+.home-main {
+    .top-section {
+        display: flex;
+        flex-direction: column;
+
+        // background-image: url("../Assets/header.jpg");
+        // background-size: cover;
+        .top-section-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 65%;
+        }
+    }
+
+    .middle-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        h1,
+        h2 {
+            font-family: $font-family-2;
+        }
+
+        .middle-h1 {
+            font-size: $fs3;
+            font-weight: 500;
+        }
+
+        .middle-h2 {
+            font-weight: 400;
+        }
+
+        .middle-p {
+            font-size: $fs-1;
+            font-weight: 300;
+            text-wrap: balance;
+        }
+
+        .right-p {
+            font-size: $fs-1;
+            font-weight: 400;
+        }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 0.5rem;
+        }
+
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .right-info {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+        }
+    }
+
+    .horizontal-line {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 0.5px;
+        opacity: 0.5;
+        background-color: #000;
+        /* You can change the color to match your design */
+    }
+
+    .faq-section {
+        .faq-p {
+            font-size: $fs-1;
+            font-weight: 300;
+            text-wrap: balance;
+        }
+    }
+}
