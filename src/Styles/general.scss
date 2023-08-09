@@ -23,6 +23,11 @@ body {
     color: $primary-color-400;
 }
 
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
 #root,
 .App {
     height: 100%;
@@ -57,7 +62,9 @@ h3 {
     font-size: $fs4;
     line-height: 1.1;
     text-wrap: balance;
-    font-weight: bolder;
+    font-weight: 400;
+    font-family: $font-family-2;
+    color: $secondary-color-400;
 }
 
 .margin-top {

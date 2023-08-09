@@ -11,12 +11,13 @@ $fs4: clamp(2.1rem, calc(2rem + 1.20vw), 3rem);
 $fs5: clamp(2.8rem, calc(2.45rem + 1.77vw), 3.82rem);
 
 //Colors
-$primary-color-400: #e3dddd;
+$primary-color-400: hsl(86, 56%, 35%);
 $primary-color-300: hsl(357, 68%, 35%);
-$secondary-color-400: #2c415f;
-$accent-color-400: #cffef9;
+$secondary-color-300: hsl(215, 37%, 37%);
+$secondary-color-400: hsl(215, 77%, 27%);
+$accent-color-400: hsl(86, 57%, 27%);
 $background-color-400: #ffffff;
-$background-color-500: hsla(357, 69%, 90%, 0.851);
+$background-color-2-400: hsla(0, 5%, 87%, 0.851);
 $text-color: #292929;
 $text-color-light: #636262;
 

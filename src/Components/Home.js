@@ -8,10 +8,14 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Home = () => {
     return (
         <main className="home-main wrapper">
-            <div className="top-section">
+            <div className="top-section wrapper">
                 <div className="top-section-content">
-                    <h1>Somos los mejores</h1>
-                    <p>TextTextTextTextTextText</p>
+                    <h1 className="h1">Medinamarcas te acompa;a</h1>
+                    <p className="header-p">                        Tus marcas protegidas y tus ideas llevadas a la realidad<br />
+                        Nos aseguramos de acompa;arte en cada paso del camino<br />
+                        Asesoramiento continuo, siempre presente y personalizado<br />
+                        para cada cliente<br />
+                    </p>
                     <Button variant="outlined">Entra en contacto</Button>
 
                 </div>
@@ -66,7 +70,7 @@ const Home = () => {
                         <Typography>¿Qué es una marca?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
+                        <p className="faq-p">
                             Es definida por nuestra normativa vigente como todo signo con la aptitud suficiente para distinguir ya sea productos o servicios (dependiendo las clases a la/s que se solicite/registre), de una persona física o jurídica de otra.
 
 
@@ -84,7 +88,7 @@ const Home = () => {
                             -sonidos,
 
                             -aromas.
-                        </Typography>
+                        </p>
                     </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -96,7 +100,7 @@ const Home = () => {
                         <Typography>¿Cómo es el procedimiento de Solicitud de una Marca?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
+                        <p className="faq-p">
                             Previamente es aconsejable realizar una Búsqueda de Marcas en el Registro, aunque no es obligatorio, se recomienda, y con el estudio de factibilidad siguiente, se sabrán de antemano cuáles serían los posibles interesados en impedir el registro a solicitar. O los antecedentes que podrían ser oponibles de oficio por la oficina técnica estatal encargada de los registros.
 
 
@@ -120,7 +124,7 @@ const Home = () => {
                             Si no existieran oposiciones, ni antecedentes de oficio, y se cumpliera con la normativa que permita que ese signo se registre, se resolverá favorablemente a nombre del solicitante, concediéndolo por un plazo de diez años. Prorrogables por períodos iguales.
 
 
-                        </Typography>
+                        </p>
                     </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -132,9 +136,9 @@ const Home = () => {
                         <Typography className='test'>¿Qué es una Patente?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
+                        <p className="faq-p">
                             Es el derecho que le otorga el registro en la oficina competente sobre una invención a su titular.
-                        </Typography>
+                        </p>
                     </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -146,11 +150,7 @@ const Home = () => {
                         <Typography>¿Qué tipos de Patentes se pueden registrar?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
-                            ¿Qué tipos de Patentes se pueden registrar?.
-
-
-
+                        <p className="faq-p">
                             De Invención, Modelos de Utilidad, Diseños Industriales.
 
 
@@ -166,7 +166,7 @@ const Home = () => {
 
 
                             Otorgada la patente le permite previo pago de anualidades, exclusividad de veinte años en invenciones y diez años en modelos de utilidad o diseños industriales (prorrogables por cinco años en modelos de utilidad y diseños industriales).
-                        </Typography>
+                        </p>
                     </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -178,7 +178,7 @@ const Home = () => {
                         <Typography>¿Cómo es el procedimiento de Solicitud de Patente?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography>
+                        <p className="faq-p">
                             Se aconseja la búsqueda previa tanto nacional como internacional.
 
 
@@ -192,11 +192,10 @@ const Home = () => {
 
 
                             Si el Estado de la técnica lo permite, no se presentaron oposiciones de terceros, ni hay impedimentos normativos, se resuelve concediendo la patente.
-                        </Typography>
+                        </p>
                     </AccordionDetails>
                 </Accordion>
             </div>
-            <div class="horizontal-line"></div>
             <footer></footer>
         </main>
     )
