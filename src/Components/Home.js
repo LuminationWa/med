@@ -8,18 +8,32 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Home = () => {
     return (
         <main className="home-main wrapper">
-            <div className="top-section wrapper">
+            <div className="top-section">
                 <div className="top-section-content">
-                    <h1 className="h1">Medinamarcas te acompa;a</h1>
+                    <h1 className="h1 main-h1">Medinamarcas te acompa;a</h1>
                     <p className="header-p">                        Tus marcas protegidas y tus ideas llevadas a la realidad<br />
                         Nos aseguramos de acompa;arte en cada paso del camino<br />
                         Asesoramiento continuo, siempre presente y personalizado<br />
                         para cada cliente<br />
                     </p>
-                    <Button variant="outlined">Entra en contacto</Button>
+                    <Button variant="contained">Entra en contacto</Button>
 
                 </div>
             </div>
+            <div className="header-bar">
+                    <div className="bar-container">
+                        <h2 className="bar-h2">Asesoriamiento internacional</h2>
+                        <p className="bar-p">Tratamos con clientes de todas partes del mundo brindandoles siempre la mejor atencion</p>
+                    </div>
+                    <div className="bar-container">
+                        <h2 className="bar-h2">Atencion rapida y eficaz</h2>
+                        <p className="bar-p">Nuestros profesionales se encuentran al tanto de nuevos contactos y se encargan de responder lo mas pronto posible</p>
+                    </div>
+                    <div className="bar-container">
+                        <h2 className="bar-h2">El cliente es la prioridad</h2>
+                        <p className="bar-p">Proveemos los mejores servicios, acompa;andote en cada paso y asumiendo total responsabilidad durante todo el proceso</p>
+                    </div>
+                </div>
             <div className="middle-section wrapper">
                 <div className="left-side">
                     <div className="info-container">
@@ -38,28 +52,27 @@ const Home = () => {
                 </div>
                 <div className="right-side">
                     <div className="right-info">
-                        <h1 className="middle-h1">1000+</h1>
+                        <h1 className="right-h1">1000+</h1>
                         <p className="right-p">Casos ganados</p>
                     </div>
                     <div className="right-info">
-                        <h1 className="middle-h1">1000+</h1>
+                        <h1 className="right-h1">1000+</h1>
                         <p className="right-p">Casos ganados</p>
                     </div>
                     <div className="right-info">
-                        <h1 className="middle-h1">1000+</h1>
+                        <h1 className="right-h1">1000+</h1>
                         <p className="right-p">Casos ganados</p>
                     </div>
                     <div className="right-info">
-                        <h1 className="middle-h1">1000+</h1>
+                        <h1 className="right-h1">1000+</h1>
                         <p className="right-p">Casos ganados</p>
                     </div>
                     <div className="right-info">
-                        <h1 className="middle-h1">1000+</h1>
+                        <h1 className="right-h1">1000+</h1>
                         <p className="right-p">Casos ganados</p>
                     </div>
                 </div>
             </div>
-            <div class="horizontal-line"></div>
             <div className="faq-section">
                 <Accordion>
                     <AccordionSummary
