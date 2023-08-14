@@ -128,8 +128,15 @@ a:hover::after {
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
-  gap: 4rem;
+  gap: 3rem;
   line-height: 1.5;
+}
+
+.top {
+  padding: 3rem;
+  background: url("../Assets/bbackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .top-section::before {
@@ -147,7 +154,7 @@ a:hover::after {
 .top-section {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 55% 45%;
   position: relative;
 }
 .top-section .image-container {
@@ -177,11 +184,12 @@ a:hover::after {
 .top-section .top-section-content .main-h1 {
   font-weight: bolder;
   transition: all ease 0.5s;
+  padding: 0.5rem;
 }
 .top-section .header-p {
-  font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
+  padding: 0.5rem;
+  font-size: clamp(1.13rem, 1.08rem + 0.22vw, 1.25rem);
   font-weight: 300;
-  white-space: normal;
 }
 
 .header-bar {
@@ -308,6 +316,53 @@ a:hover::after {
     display: none;
   }
 }
+.servicios-main .servicios-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(3rem + 50px);
+}
+.servicios-main .servicios-container #servicios-1 {
+  border-radius: 50px;
+  background-image: url("../Assets/servicios1.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.servicios-main .servicios-container #servicios-2 {
+  border-radius: 50px;
+  background-image: url("../Assets/servicios2.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.servicios-main .servicios-container #servicios-3 {
+  border-radius: 50px;
+  background-image: url("../Assets/servicios2.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.servicios-main .servicios-container .servicios-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 0 1rem;
+  padding-bottom: 0;
+}
+.servicios-main .servicios-container .servicios-card h2 {
+  color: #a9792b;
+}
+.servicios-main .servicios-container .servicios-card .servicios-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translateY(50px);
+  padding: 1rem;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -319,7 +374,7 @@ a:hover::after {
 }
 
 body {
-  background-color: hsl(0, 0%, 98%);
+  background-color: rgba(249, 243, 234, 0.1215686275);
   height: 100vh;
   height: 100svh;
   color: hsl(86, 56%, 35%);
@@ -352,7 +407,7 @@ h3 {
 }
 
 .wrapper {
-  width: min(100% - 3rem, 70ch);
+  width: min(100% - 3rem, 80ch);
   margin-inline: auto;
 }
 

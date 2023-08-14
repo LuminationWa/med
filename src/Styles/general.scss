@@ -3,6 +3,7 @@
 @import "nav";
 @import "contacto";
 @import "home";
+@import "servicios";
 
 
 * {
@@ -17,7 +18,7 @@
 }
 
 body {
-    background-color: $background-color-400;
+    background-color: #f9f3ea1f;
     height: 100vh;
     height: 100svh;
     color: $primary-color-400;
@@ -50,7 +51,7 @@ h3 {
 }
 
 .wrapper {
-    width: min(100% - 3rem, 70ch);
+    width: min(100% - 3rem, 80ch);
     margin-inline: auto;
 }
 

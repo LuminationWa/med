@@ -11,7 +11,7 @@ const Nav = () => {
             <div className="main-nav">
                 <Link to="/">
                     <h1>
-                        MEDINAMARCAS
+                        MEDINA MARCAS
                     </h1>
                 </Link>
                 <div className="desktop-nav">

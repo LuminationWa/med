@@ -4,27 +4,27 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import headerImg from "../Assets/background3.jpg";
+import headerImg from "../Assets/background.jpg";
 
 const Home = () => {
     return (
-        <main className="home-main wrapper">
-            <div className="top-section">
-                <div className="top-section-content">
-                    <h1 className="h1 main-h1">Somos los mejores</h1>
-                    <p className="header-p">                        Tus marcas protegidas y tus ideas llevadas a la realidad<br />
-                        Nos aseguramos de acompa;arte en cada paso del camino<br />
-                        Asesoramiento continuo, siempre presente y personalizado
-                        para cada cliente
-                    </p>
-                    <Button variant="contained">Entra en contacto</Button>
-
+        <main className="home-main">
+            <section className="top">
+                <div className="top-section wrapper">
+                    <div className="top-section-content">
+                        <h1 className="h1 main-h1">Somos los mejores</h1>
+                        <p className="header-p">                        Tus marcas protegidas y tus ideas llevadas a la realidad<br />
+                            Nos aseguramos de acompa;arte en cada paso del camino<br />
+                            Asesoramiento continuo, siempre presente y personalizado
+                            para cada cliente
+                        </p>
+                        <Button variant="contained">Entra en contacto</Button>
+                    </div>
+                    <div className='image-container'>
+                    </div>
                 </div>
-                <div className='image-container'>
-                    <img src={headerImg} alt="lawyer"></img>
-                </div>
-            </div>
-            <div className="header-bar">
+            </section>
+            <div className="header-bar wrapper">
                 <div className="header-container">
                     <div className="bar-container">
                         <h2 className="bar-h2">Asesoriamiento internacional</h2>
@@ -79,7 +79,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="faq-section">
+            <div className="faq-section wrapper">
                 <Accordion>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
