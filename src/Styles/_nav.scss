@@ -1,3 +1,4 @@
+
 .desktop-nav {
     display: none;
 }
@@ -11,7 +12,6 @@ a {
     opacity: 0.75;
     position: relative;
     text-decoration: none;
-    color: $secondary-color-400;
     font-size: 24px;
     padding: 10px;
   
@@ -78,6 +78,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        padding: 1.5rem 1.5rem 0 1.5rem;
 
         .main-nav {
             display: flex;

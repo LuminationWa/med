@@ -4,23 +4,28 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import headerImg from "../Assets/background3.jpg";
 
 const Home = () => {
     return (
         <main className="home-main wrapper">
             <div className="top-section">
                 <div className="top-section-content">
-                    <h1 className="h1 main-h1">Medinamarcas te acompa;a</h1>
+                    <h1 className="h1 main-h1">Somos los mejores</h1>
                     <p className="header-p">                        Tus marcas protegidas y tus ideas llevadas a la realidad<br />
                         Nos aseguramos de acompa;arte en cada paso del camino<br />
-                        Asesoramiento continuo, siempre presente y personalizado<br />
-                        para cada cliente<br />
+                        Asesoramiento continuo, siempre presente y personalizado
+                        para cada cliente
                     </p>
                     <Button variant="contained">Entra en contacto</Button>
 
                 </div>
+                <div className='image-container'>
+                    <img src={headerImg} alt="lawyer"></img>
+                </div>
             </div>
             <div className="header-bar">
+                <div className="header-container">
                     <div className="bar-container">
                         <h2 className="bar-h2">Asesoriamiento internacional</h2>
                         <p className="bar-p">Tratamos con clientes de todas partes del mundo brindandoles siempre la mejor atencion</p>
@@ -34,6 +39,7 @@ const Home = () => {
                         <p className="bar-p">Proveemos los mejores servicios, acompa;andote en cada paso y asumiendo total responsabilidad durante todo el proceso</p>
                     </div>
                 </div>
+            </div>
             <div className="middle-section wrapper">
                 <div className="left-side">
                     <div className="info-container">
