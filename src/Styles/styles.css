@@ -316,6 +316,26 @@ a:hover::after {
     display: none;
   }
 }
+.servicios-main .servicios-top-container {
+  background: rgb(216, 216, 243);
+}
+.servicios-main .servicios-top-container .servicios-top {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 3rem 0 3rem 0;
+  place-items: center;
+}
+.servicios-main .servicios-top-container .servicios-top h1 {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(215, 87%, 38%);
+  font-weight: bolder;
+  transition: all ease 0.5s;
+  padding: 0.5rem;
+  font-size: clamp(2.8rem, 2.45rem + 1.77vw, 3.82rem);
+}
+.servicios-main .servicios-top-container .servicios-top p {
+  font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
+}
 .servicios-main .servicios-container {
   display: flex;
   flex-direction: column;
@@ -323,21 +343,18 @@ a:hover::after {
   gap: calc(3rem + 50px);
 }
 .servicios-main .servicios-container #servicios-1 {
-  border-radius: 50px;
   background-image: url("../Assets/servicios1.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
 }
 .servicios-main .servicios-container #servicios-2 {
-  border-radius: 50px;
   background-image: url("../Assets/servicios2.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
 }
 .servicios-main .servicios-container #servicios-3 {
-  border-radius: 50px;
   background-image: url("../Assets/servicios2.jpg");
   background-size: cover;
   background-position: right;
@@ -349,11 +366,14 @@ a:hover::after {
   align-items: center;
   padding: 3rem 1rem 0 1rem;
   padding-bottom: 0;
+  border-radius: 50px;
 }
 .servicios-main .servicios-container .servicios-card h2 {
   color: #a9792b;
 }
 .servicios-main .servicios-container .servicios-card .servicios-text {
+  cursor: pointer;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 1rem;

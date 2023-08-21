@@ -1,9 +1,16 @@
+import headerImg from "../Assets/background.jpg";
 
 const Servicios = () => {
     return (
-        <main className="servicios-main wrapper">
-            <h3>MedinaMarcas se encarga de asesorarte en todas las areas</h3>
-            <div className="servicios-container">
+        <main className="servicios-main">
+            <div className="servicios-top-container">
+                <div className="servicios-top wrapper">
+                    <h1 className="h1">MedinaMarcas te acompa;a</h1>
+                    <img src={headerImg}></img>
+                    {/* <p>Nos encargamos de brindarte cobertura total en cada paso del camino. Teniendo siempre presente las necesidades del consumidor y proveyendo atencion personalizada</p> */}
+                </div>
+            </div>
+            <div className="servicios-container wrapper">
                 <div className="servicios-card" id="servicios-1">
                     <h2>Llevando tus ideas a la realidad</h2>
                     <div className="servicios-text wrapper">

@@ -1,5 +1,27 @@
 .servicios-main {
 
+    .servicios-top-container {
+        background: rgb(216, 216, 243);
+        .servicios-top {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            padding: 3rem 0 3rem 0;
+            place-items: center;
+
+            h1 {
+                font-family: $font-family-2;
+                color: $secondary-color-400;
+                font-weight: bolder;
+                transition: all ease 0.5s;
+                padding: 0.5rem;
+                font-size: $fs5;
+            }
+            p {
+                font-size: $fs-1;
+            }
+        }
+    }
+
     .servicios-container {
         display: flex;
         flex-direction: column;
@@ -7,21 +29,20 @@
         gap: calc(3rem + 50px);
 
         #servicios-1 {
-            border-radius: 50px;
             background-image: url("../Assets/servicios1.jpg");
             background-size: cover;
             background-position: right;
             background-repeat: no-repeat;
         }
+
         #servicios-2 {
-            border-radius: 50px;
             background-image: url("../Assets/servicios2.jpg");
             background-size: cover;
             background-position: right;
             background-repeat: no-repeat;
         }
+
         #servicios-3 {
-            border-radius: 50px;
             background-image: url("../Assets/servicios2.jpg");
             background-size: cover;
             background-position: right;
@@ -34,12 +55,15 @@
             align-items: center;
             padding: 3rem 1rem 0 1rem;
             padding-bottom: 0;
+            border-radius: 50px;
 
             h2 {
                 color: #a9792b;
             }
 
             .servicios-text {
+                cursor: pointer;
+                border-radius: 5px;
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
