@@ -69,7 +69,7 @@ a:hover::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: 1.5rem;
   }
   nav .main-nav {
     display: flex;
@@ -316,25 +316,37 @@ a:hover::after {
     display: none;
   }
 }
-.servicios-main .servicios-top-container {
-  background: rgb(216, 216, 243);
+.servicios-main {
+  padding-bottom: 100px;
 }
 .servicios-main .servicios-top-container .servicios-top {
   display: grid;
   grid-template-columns: 60% 40%;
-  padding: 3rem 0 3rem 0;
+  grid-template-rows: 1fr 0.25fr;
+  grid-template-areas: "h1 c" "C p";
+  padding: 4rem 0 calc(6rem - 75px) 0;
   place-items: center;
 }
 .servicios-main .servicios-top-container .servicios-top h1 {
   font-family: "Montserrat", sans-serif;
-  color: hsl(215, 87%, 38%);
   font-weight: bolder;
   transition: all ease 0.5s;
   padding: 0.5rem;
   font-size: clamp(2.8rem, 2.45rem + 1.77vw, 3.82rem);
+  grid-area: h1;
 }
 .servicios-main .servicios-top-container .servicios-top p {
+  transform: translateY(-75px);
   font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
+  grid-area: p;
+}
+.servicios-main .servicios-top-container .servicios-top .sub-color {
+  color: #5476ba;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  transition: all ease 0.5s;
+  padding: 0.5rem;
+  font-size: clamp(2.8rem, 2.45rem + 1.77vw, 3.82rem);
 }
 .servicios-main .servicios-container {
   display: flex;
@@ -369,7 +381,12 @@ a:hover::after {
   border-radius: 50px;
 }
 .servicios-main .servicios-container .servicios-card h2 {
-  color: #a9792b;
+  border-radius: 2.5px;
+  background: rgba(247, 247, 247, 0.569);
+  font-size: clamp(1.94rem, 1.77rem + 0.87vw, 2.44rem);
+  padding: 0.5rem;
+  text-align: center;
+  max-width: 90%;
 }
 .servicios-main .servicios-container .servicios-card .servicios-text {
   cursor: pointer;
