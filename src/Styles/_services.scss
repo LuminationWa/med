@@ -1,0 +1,52 @@
+.services-main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    .servicios-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem;
+        .servicios-p, .servicios-h2 {
+            position: relative;
+            z-index: 2;
+            background: none;
+        }
+        .servicios-p {
+            cursor: pointer;
+        }
+    }
+    #servicios-1 {
+        background: url("../Assets/servicios1-desk.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    #servicios-1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: min(100% - 3rem, 80ch);
+            height: 100%;
+            background: linear-gradient(to right, rgba(188, 237, 255, 0.9), transparent);
+            z-index: 1;
+    }
+    #servicios-2 {
+        background: url("../Assets/servicios2-desk.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    #servicios-2::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: min(100% - 3rem, 80ch);
+            height: 100%;
+            background: linear-gradient(to right, rgba(188, 237, 255, 0.8), transparent);
+            z-index: 1;
+    }
+}

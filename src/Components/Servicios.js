@@ -10,7 +10,7 @@ const Servicios = () => {
             </div>
             <div className="servicios-container wrapper">
                 <div className="servicios-card" id="servicios-1">
-                    <h2>Llevando tus ideas a la realidad</h2>
+                    <h2 className="servicios-h2">Llevando tus ideas a la realidad</h2>
                     <div className="servicios-text wrapper">
                         <p className="servicios-p">Registro de marcas</p>
                         <p className="servicios-p">Registro de patentes</p>
@@ -18,7 +18,7 @@ const Servicios = () => {
                     </div>
                 </div>
                 <div className="servicios-card" id="servicios-2">
-                    <h2>Construyendo puentes</h2>
+                    <h2 className="servicios-h2">Construyendo puentes</h2>
                     <div className="servicios-text wrapper">
                         <p className="servicios-p">Licencias</p>
                         <p className="servicios-p">Convenios de Cesión</p>
