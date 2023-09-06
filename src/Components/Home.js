@@ -215,7 +215,6 @@ const Home = () => {
                     </AccordionDetails>
                 </Accordion>
             </div>
-            <footer></footer>
         </main>
     )
 }

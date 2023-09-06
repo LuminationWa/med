@@ -1,20 +1,20 @@
-
 .desktop-nav {
-    display: none;
+  display: none;
 }
 
 .mobile-nav {
-    display: block;
+  display: block;
 }
 
-a {
+nav {
+  a {
     transition: opacity 0.25s;
     opacity: 0.75;
     position: relative;
     text-decoration: none;
     font-size: 24px;
     padding: 10px;
-  
+
     &::before,
     &::after {
       content: '';
@@ -27,70 +27,73 @@ a {
       transition: all 0.25s ease-out;
       opacity: 0.75;
     }
-  
+
     &::before {
       transform: translateX(-50%);
       opacity: 0.75;
     }
-  
+
     &::after {
       transform: translateX(-50%);
       opacity: 0.75;
     }
-  
+
     &:hover {
       opacity: 1;
-  
+
       &::before {
         width: 15%;
       }
-    
+
       &::after {
         width: 45%;
       }
     }
   }
 
-.lang-btn {
+  .lang-btn {
     border: none;
     background: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.25rem;
+
     &:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
+
     font-size: $fs-1;
     opacity: 0.75;
+  }
 }
 
 @media (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 1.5rem;
+
+    .main-nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .desktop-nav {
-        display: block;
+      display: flex;
+      gap: 1.25rem;
     }
 
-    .mobile-nav {
-        display: none;
-    }
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        padding: 1.5rem;
-
-        .main-nav {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .desktop-nav {
-            display: flex;
-            gap: 1.25rem;
-        }
-
-    }
+  }
 }

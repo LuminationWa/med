@@ -7,7 +7,7 @@
   display: block;
 }
 
-a {
+nav a {
   transition: opacity 0.25s;
   opacity: 0.75;
   position: relative;
@@ -15,7 +15,7 @@ a {
   font-size: 24px;
   padding: 10px;
 }
-a::before, a::after {
+nav a::before, nav a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -26,25 +26,24 @@ a::before, a::after {
   transition: all 0.25s ease-out;
   opacity: 0.75;
 }
-a::before {
+nav a::before {
   transform: translateX(-50%);
   opacity: 0.75;
 }
-a::after {
+nav a::after {
   transform: translateX(-50%);
   opacity: 0.75;
 }
-a:hover {
+nav a:hover {
   opacity: 1;
 }
-a:hover::before {
+nav a:hover::before {
   width: 15%;
 }
-a:hover::after {
+nav a:hover::after {
   width: 45%;
 }
-
-.lang-btn {
+nav .lang-btn {
   border: none;
   background: none;
   display: flex;
@@ -54,7 +53,7 @@ a:hover::after {
   font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
   opacity: 0.75;
 }
-.lang-btn:hover {
+nav .lang-btn:hover {
   cursor: pointer;
 }
 
@@ -128,6 +127,7 @@ a:hover::after {
   display: flex;
   flex-direction: column;
   padding-top: 3rem;
+  padding-bottom: 3rem;
   gap: 3rem;
   line-height: 1.5;
 }
@@ -487,6 +487,51 @@ a:hover::after {
   height: 100%;
   background: linear-gradient(to right, rgba(188, 237, 255, 0.8), transparent);
   z-index: 1;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+  padding: 5rem 1rem 5rem 1rem;
+  gap: 2rem;
+}
+footer * {
+  color: white;
+}
+footer .row {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem 0 5rem;
+}
+footer .footer-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+footer .footer-top .links {
+  text-align: right;
+  line-height: 1.6;
+}
+footer .footer-top h1 {
+  font-size: clamp(1.94rem, 1.77rem + 0.87vw, 2.44rem);
+  margin-bottom: 1rem;
+}
+footer .footer-top p, footer .footer-top span {
+  font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
+  line-height: 1.6;
+}
+footer .footer-top span {
+  text-decoration: underline;
+}
+footer .footer-top .contact-text {
+  margin-bottom: 1rem;
+}
+footer .footer-bottom {
+  width: 100%;
+  padding: 0 5rem 0 5rem;
+  font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
 }
 
 * {
