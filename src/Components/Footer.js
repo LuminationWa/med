@@ -11,8 +11,8 @@ const Footer = () => {
                 <div className="row contact-info wrapper">
                     <div className="contact-text">
                         <h1>Entra en contacto</h1>
-                        <p>Telefono: 22039306 <br /> 098987250 </p>
-                        <p>o <span className="underlined">enviandonos un email</span></p>
+                        <p>Telefóno: 22039306 <br /> 098987250 </p>
+                        <p>o <span className="underlined">enviando un email</span></p>
                     </div>
                     <div className="contact-icons">
                         <InstagramIcon fontSize='medium' />
@@ -22,12 +22,12 @@ const Footer = () => {
                 </div>
                 <div className="row links wrapper">
                     <Link to="/acerca-de">Acerca de</Link>
-                    <Link to="/servicios">Servicios</Link>
+                    <Link to="/contacto">Servicios</Link>
                     <Link to="/contacto">Contacto</Link>
                 </div>
             </div>
             <div className="footer-bottom">
-                @2023 Medina Marcas Privacidad / Terminos y condiciones
+                @2023 Medina Marcas
             </div>
         </footer>
     )

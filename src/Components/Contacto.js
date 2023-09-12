@@ -36,19 +36,23 @@ const Contacto = () => {
             <div className="media-info wrapper">
                 <div className="media-div">
                     <NearMeIcon />
-                    Av. Garibaldi 2185
+                    Av. Garibaldi 2185, Montevideo, Uruguay
                 </div>
                 <div className="media-div">
                     <EmailIcon />
-                    example@gmail.com
+                    info@medinamarcas.com
                 </div>
                 <div className="media-div">
                     <RingVolumeIcon />
                     +598 22039306
                 </div>
                 <div className="media-div">
+                    <RingVolumeIcon />
+                    Fax +598 22007474
+                </div>
+                <div className="media-div">
                     <WhatsAppIcon />
-                    +598 92756666
+                    +598 98987250
                 </div>
             </div>
 

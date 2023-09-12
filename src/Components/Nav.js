@@ -9,14 +9,14 @@ const Nav = () => {
                 Es
             </button> */}
             <div className="main-nav">
-                <Link to="/">
+                <Link to="/" className='logo'>
                     <h1>
                         MEDINA MARCAS
                     </h1>
                 </Link>
                 <div className="desktop-nav">
                     <Link to="/acerca-de">Acerca de</Link>
-                    <Link to="/servicios">Servicios</Link>
+                    <Link to="/contacto">Servicios</Link>
                     <Link to="/contacto">Contacto</Link>
                 </div>
                 <div className="mobile-nav">

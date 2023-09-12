@@ -9,7 +9,7 @@
 
 .top {
     padding: 3rem;
-    background: url("../Assets/bbackground.png");
+    background: url("../Assets/bg-desk3.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -91,9 +91,10 @@
         border-radius: 10px;
         transform: translateY(50px);
         background-color: $background-color-400;
-        display: flex;
+        display: grid;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: relative;
+        grid-template-columns: 1fr 1fr 1fr;
 
         .bar-container {
             padding: 1.5rem;
@@ -117,12 +118,14 @@
                 font-weight: 400;
                 color: $secondary-color-300;
                 transition: all ease 0.5s;
+                margin-bottom: 0.5rem;
+
             }
 
             .bar-p {
                 font-size: $fs-1;
                 font-weight: 300;
-                text-wrap: balance;
+                text-align: justify;
             }
         }
     }
@@ -155,6 +158,7 @@
         font-size: $fs-1;
         font-weight: 300;
         text-wrap: balance;
+        text-align: justify;
     }
 
     .right-p {
@@ -181,6 +185,7 @@
             display: flex;
             flex-direction: column;
             padding: 1rem;
+            align-items: center;
         }
 
     }

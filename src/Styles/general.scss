@@ -6,6 +6,7 @@
 @import "servicios";
 @import "services";
 @import "footer";
+@import "acerca";
 
 
 * {
@@ -69,7 +70,37 @@ h3 {
     font-family: $font-family-2;
 }
 
+.highlighted {
+    border-left: 2px solid #FFA500;
+    border-right: 2px solid #FFA500;
+}
+
 .margin-top {
     margin-top: 1rem;
 }
 
+
+.highlighted-text {
+    position: relative;
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.highlighted-text::before,
+.highlighted-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-top: 2px solid #000;
+    width: 20%;
+}
+
+.highlighted-text::before {
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.highlighted-text::after {
+    right: 10%;
+    transform: translateY(-50%);
+}
