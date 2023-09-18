@@ -12,12 +12,18 @@ const Footer = () => {
                     <div className="contact-text">
                         <h1>Entra en contacto</h1>
                         <p>Telefóno: 22039306 <br /> 098987250 </p>
-                        <p>o <span className="underlined">enviando un email</span></p>
+                        <p>o <span className="underlined"><Link to="/contacto">enviando un email</Link></span></p>
                     </div>
                     <div className="contact-icons">
-                        <InstagramIcon fontSize='medium' />
-                        <FacebookIcon fontSize='medium' />
-                        <TwitterIcon fontSize='medium' />
+                        <a href="https://www.facebook.com/profile.php?id=100063489703723 ">
+                            <InstagramIcon fontSize='small' />
+                        </a>
+                        <a href="https://www.instagram.com/medina.marcas/">
+                            <FacebookIcon fontSize='small' />
+                        </a>
+                        <a href="https://twitter.com/marcasmedinauy">
+                            <TwitterIcon fontSize='small' />
+                        </a>
                     </div>
                 </div>
                 <div className="row links wrapper">

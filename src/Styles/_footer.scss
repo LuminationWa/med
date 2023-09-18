@@ -42,3 +42,15 @@ footer {
         font-size: $fs-1;
     }
 }
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem 0rem 1rem 0rem;
+        .links {
+            display: none;
+        }
+        .contact-info {
+            padding: 0;
+        }
+    }
+  }

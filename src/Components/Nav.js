@@ -15,9 +15,9 @@ const Nav = () => {
                     </h1>
                 </Link>
                 <div className="desktop-nav">
-                    <Link to="/acerca-de">Acerca de</Link>
-                    <Link to="/contacto">Servicios</Link>
-                    <Link to="/contacto">Contacto</Link>
+                    <Link to="/acerca-de" className='link'>Acerca de</Link>
+                    <Link to="/contacto" className='link'>Servicios</Link>
+                    <Link to="/contacto" className='link'>Contacto</Link>
                 </div>
                 <div className="mobile-nav">
                     <div id="nav-icon4">

@@ -1,4 +1,4 @@
-import background from "../Assets/about-desk2.jpg";
+import background from "../Assets/about-desk.png";
 const Acerca = () => {
     return (
         <main className="acerca wrapper">

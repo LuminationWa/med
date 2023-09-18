@@ -104,3 +104,15 @@ h3 {
     right: 10%;
     transform: translateY(-50%);
 }
+
+.highlight-2 {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .highlighted-text::before,
+    .highlighted-text::after {
+        display: none;
+
+    }
+  }

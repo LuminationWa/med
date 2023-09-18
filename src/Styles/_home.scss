@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    gap: 3rem;
+    gap: 2rem;
     line-height: 1.5;
 }
 
@@ -12,6 +12,12 @@
     background: url("../Assets/bg-desk3.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.test {
+    display:flex;
+    justify-content: space-around;
+    font-weight: bold;
 }
 
 

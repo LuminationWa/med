@@ -7,7 +7,7 @@
   display: block;
 }
 
-nav a {
+nav .link {
   transition: opacity 0.25s;
   opacity: 0.75;
   position: relative;
@@ -15,7 +15,7 @@ nav a {
   font-size: 24px;
   padding: 10px;
 }
-nav a::before, nav a::after {
+nav .link::before, nav .link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -26,21 +26,21 @@ nav a::before, nav a::after {
   transition: all 0.25s ease-out;
   opacity: 0.75;
 }
-nav a::before {
+nav .link::before {
   transform: translateX(-50%);
   opacity: 0.75;
 }
-nav a::after {
+nav .link::after {
   transform: translateX(-50%);
   opacity: 0.75;
 }
-nav a:hover {
+nav .link:hover {
   opacity: 1;
 }
-nav a:hover::before {
+nav .link:hover::before {
   width: 15%;
 }
-nav a:hover::after {
+nav .link:hover::after {
   width: 45%;
 }
 nav .lang-btn {
@@ -131,7 +131,7 @@ nav .logo {
   flex-direction: column;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  gap: 3rem;
+  gap: 2rem;
   line-height: 1.5;
 }
 
@@ -140,6 +140,12 @@ nav .logo {
   background: url("../Assets/bg-desk3.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.test {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
 }
 
 .top-section::before {
@@ -541,6 +547,17 @@ footer .footer-bottom {
   font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);
 }
 
+@media (max-width: 768px) {
+  footer {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  footer .links {
+    display: none;
+  }
+  footer .contact-info {
+    padding: 0;
+  }
+}
 .acerca {
   display: flex;
   flex-direction: column;
@@ -657,6 +674,17 @@ h3 {
 .highlighted-text::after {
   right: 10%;
   transform: translateY(-50%);
+}
+
+.highlight-2 {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .highlighted-text::before,
+  .highlighted-text::after {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

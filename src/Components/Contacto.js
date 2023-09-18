@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import RingVolumeIcon from '@mui/icons-material/RingVolume';
 import NearMeIcon from '@mui/icons-material/NearMe';
 import EmailIcon from '@mui/icons-material/Email';
+import FaxIcon from '@mui/icons-material/Fax';
 
 
 const Contacto = () => {
@@ -18,17 +19,25 @@ const Contacto = () => {
             <h1 className="h1">Contacto</h1>
 
             <div className="media-div media-multi">
-                <InstagramIcon fontSize='small' />
-                <FacebookIcon fontSize='small' />
-                <TwitterIcon fontSize='small' />
-            </div>
+                <a href="https://www.facebook.com/profile.php?id=100063489703723 ">
+                    <InstagramIcon fontSize='small' />
+                </a>
+                <a href="https://www.instagram.com/medina.marcas/">
+                    <FacebookIcon fontSize='small' />
+                </a>
+                <a href="https://twitter.com/marcasmedinauy">
+                    <TwitterIcon fontSize='small' />
+                </a>
+            </div >
 
-            <form className="contacto-form" action="mailto:example@gmail.com" method="post" encType="text/plain">
-                <TextField required id="nombre" label="Nombre" variant="standard" />
-                <TextField required id="correo" label="Correo" variant="standard" />
-                <TextField id="telefono" label="Telefono" variant="standard" />
-                <TextField multiline rows={3} required id="mensaje" label="Mensaje" variant="standard" />
-                <Button variant="contained" style={buttonStyle}>
+            <form className="contacto-form" action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="ab4ce648-855c-446c-b667-41245ff9b57a"></input>
+                <div class="h-captcha" data-captcha="true"></div>
+                <TextField required name='name' id="name" label="Nombre" variant="standard" />
+                <TextField required name='email'id="email" label="Correo" variant="standard" />
+                <TextField name='phone' id="phone" label="Telefono" variant="standard" />
+                <TextField name ='message' multiline rows={3} required id="message" label="Mensaje" variant="standard" />
+                <Button variant="contained" style={buttonStyle} type="submit">
                     Enviar
                 </Button>
 
@@ -47,16 +56,16 @@ const Contacto = () => {
                     +598 22039306
                 </div>
                 <div className="media-div">
-                    <RingVolumeIcon />
-                    Fax +598 22007474
-                </div>
-                <div className="media-div">
                     <WhatsAppIcon />
                     +598 98987250
                 </div>
+                <div className="media-div">
+                    <FaxIcon />
+                    Fax +598 22007474
+                </div>
             </div>
 
-        </main>
+        </main >
     )
 }
 

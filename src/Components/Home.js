@@ -15,7 +15,7 @@ const Home = () => {
                         <h1 className="h1 main-h1">Somos los mejores</h1>
                         <p className="header-p">
                             Acompañándolo desde 1968<br />
-                            Sus Marcas protegidas y sus ideas llevadas a la realidad<br />
+                            Sus <span className='highlight-2'>Marcas</span> protegidas y sus ideas llevadas a la realidad<br />
                             Asesoramiento continuo, siempre presente y personalizado
                             para cada cliente
                         </p>
@@ -25,19 +25,24 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <div className='test'>
+                <p>Defensas</p>
+                <p>Registros</p>
+                <p>Vigilancias</p>
+            </div>
             <div className="header-bar wrapper">
                 <div className="header-container">
                     <div className="bar-container">
-                        <h2 className="bar-h2">Atención permanente al cliente</h2>
+                        <h2 className="bar-h2">Atención <br /> permanente</h2>
                         <p className="bar-p">Profesionales letrados altamente calificados y con amplía experiencia a su disposición las 24 horas del día, garantizando su satisfacción</p>
                     </div>
                     <div className="bar-container">
-                        <h2 className="bar-h2">Asesoriamiento internacional</h2>
+                        <h2 className="bar-h2">Asesoriamiento <br /> internacional</h2>
                         <p className="bar-p">Atendemos clientes de todo el mundo, desde nuestra base principal en Uruguay y para toda América</p>
                     </div>
 
                     <div className="bar-container">
-                        <h2 className="bar-h2">Responsabilidad primero</h2>
+                        <h2 className="bar-h2">Responsabilidad <br /> primero</h2>
                         <p className="bar-p">Nos encargamos de brindarle tranquilidad y seguridad en cada etapa de la gestión, asumiendo total responsabilidad durante todo el proceso</p>
                     </div>
                 </div>
