@@ -15,7 +15,7 @@ const Home = () => {
                         <h1 className="h1 main-h1">Somos los mejores</h1>
                         <p className="header-p">
                             Acompañándolo desde 1968<br />
-                            Sus <span className='highlight-2'>Marcas</span> protegidas y sus ideas llevadas a la realidad<br />
+                            Sus <span className='highlight-2'>Marcas</span> y <span className='highlight-2'>Patentes</span> protegidas, y sus ideas llevadas a la realidad<br />
                             Asesoramiento continuo, siempre presente y personalizado
                             para cada cliente
                         </p>
@@ -56,7 +56,7 @@ const Home = () => {
                             El registro otorga un derecho transferible, altamente valioso para las empresas, que puede ser licenciado en acuerdos onerosos o gratuitos.</p>
                     </div>
                     <div className="info-container">
-                        <h2 className="middle-h2">¿Por qué elergirnos?</h2>
+                        <h2 className="middle-h2">¿Por qué elegirnos?</h2>
                         <p className="middle-p">
                             Ofrecemos una fluida relación comercial y profesional por los diversos medios de comunicación, presencia física y en línea para atender sus requerimientos y brindar máxima confianza. <br />
                             Nuestros profesionales titulados tienen experiencia práctica en diversas áreas del mundo real. <br />
@@ -94,7 +94,7 @@ const Home = () => {
                         aria-controls="panel0a-content"
                         id="panel0a-header"
                     >
-                        <Typography>¿Qué es una marca?</Typography>
+                        <Typography>¿Qué es una Marca?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <p className="faq-p">
@@ -143,7 +143,7 @@ const Home = () => {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>¿Puede ser una marca registrada internacionalmente?</Typography>
+                        <Typography>¿Puede ser una Marca registrada internacionalmente?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <p className="faq-p">

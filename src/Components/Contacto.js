@@ -31,7 +31,7 @@ const Contacto = () => {
             </div >
 
             <form className="contacto-form" action="https://api.web3forms.com/submit" method="post">
-                <input type="hidden" name="access_key" value="ab4ce648-855c-446c-b667-41245ff9b57a"></input>
+                <input type="hidden" name="access_key" value="dfd3d206-a41f-40fb-b9bc-4651cfa549af"></input>
                 <div class="h-captcha" data-captcha="true"></div>
                 <TextField required name='name' id="name" label="Nombre" variant="standard" />
                 <TextField required name='email'id="email" label="Correo" variant="standard" />
@@ -49,7 +49,7 @@ const Contacto = () => {
                 </div>
                 <div className="media-div">
                     <EmailIcon />
-                    info@medinamarcas.com
+                    info@medinamarcas.uy
                 </div>
                 <div className="media-div">
                     <RingVolumeIcon />

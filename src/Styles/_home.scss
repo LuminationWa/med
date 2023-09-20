@@ -9,13 +9,13 @@
 
 .top {
     padding: 3rem;
-    background: url("../Assets/bg-desk3.png");
+    background: url("../Assets/bg-desk4.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .test {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     font-weight: bold;
 }
@@ -214,8 +214,14 @@
 }
 
 @media (max-width: 768px) {
+    .top {
+        padding: 0;
+    }
+    .top-section::before {
+        display: none;
+    }
     .top-section {
-        align-items: center;
+        display: block;
 
         .top-section-content {
             max-width: 100%;
@@ -226,9 +232,14 @@
         }
     }
 
-    .header-container {
-        flex-direction: column;
+    .header-bar {
+        background-image: url("../Assets/background2-mobile.png");
+        .header-container {
+            display: flex;
+            flex-direction: column;
+        }
     }
+
 
     .middle-section {
         display: flex;
@@ -237,4 +248,9 @@
             display: none;
         }
     }
+
+    .header-p {
+        background: #fdfdfdb8;
+    }
+
 }

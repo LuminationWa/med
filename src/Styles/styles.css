@@ -7,6 +7,11 @@
   display: block;
 }
 
+.main-nav {
+  text-align: center;
+  padding-top: 1rem;
+}
+
 nav .link {
   transition: opacity 0.25s;
   opacity: 0.75;
@@ -137,7 +142,7 @@ nav .logo {
 
 .top {
   padding: 3rem;
-  background: url("../Assets/bg-desk3.png");
+  background: url("../Assets/bg-desk4.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -310,8 +315,14 @@ nav .logo {
 }
 
 @media (max-width: 768px) {
+  .top {
+    padding: 0;
+  }
+  .top-section::before {
+    display: none;
+  }
   .top-section {
-    align-items: center;
+    display: block;
   }
   .top-section .top-section-content {
     max-width: 100%;
@@ -319,7 +330,11 @@ nav .logo {
   .top-section .top-section-content h1 {
     text-align: center;
   }
-  .header-container {
+  .header-bar {
+    background-image: url("../Assets/background2-mobile.png");
+  }
+  .header-bar .header-container {
+    display: flex;
     flex-direction: column;
   }
   .middle-section {
@@ -327,6 +342,9 @@ nav .logo {
   }
   .middle-section .right-side {
     display: none;
+  }
+  .header-p {
+    background: rgba(253, 253, 253, 0.7215686275);
   }
 }
 .servicios-main {
