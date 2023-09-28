@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="row contact-info wrapper">
                     <div className="contact-text">
                         <h1>Entra en contacto</h1>
-                        <p>Telefóno: 22039306 <br /> 098987250 </p>
+                        <p>Telefóno: +598 22039306 <br /> +598 98987250 </p>
                         <p>o <span className="underlined"><Link to="/contacto">enviando un email</Link></span></p>
                     </div>
                     <div className="contact-icons">

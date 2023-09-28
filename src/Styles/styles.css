@@ -147,7 +147,7 @@ nav .logo {
   background-repeat: no-repeat;
 }
 
-.test {
+.sub-bar {
   display: flex;
   justify-content: space-around;
   font-weight: bold;

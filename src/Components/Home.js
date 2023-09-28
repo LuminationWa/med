@@ -5,6 +5,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import headerImg from "../Assets/background.jpg";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const Home = () => {
     return (
@@ -19,13 +21,13 @@ const Home = () => {
                             Asesoramiento continuo, siempre presente y personalizado
                             para cada cliente
                         </p>
-                        <Button variant="contained">Entrar en contacto</Button>
+                        <Link to="/contacto"><Button variant="contained">Entrar en contacto</Button></Link>
                     </div>
                     <div className='image-container'>
                     </div>
                 </div>
             </section>
-            <div className='test'>
+            <div className='sub-bar'>
                 <p>Defensas</p>
                 <p>Registros</p>
                 <p>Vigilancias</p>
@@ -34,7 +36,7 @@ const Home = () => {
                 <div className="header-container">
                     <div className="bar-container">
                         <h2 className="bar-h2">Atención <br /> permanente</h2>
-                        <p className="bar-p">Profesionales letrados altamente calificados y con amplía experiencia a su disposición las 24 horas del día, garantizando su satisfacción</p>
+                        <p className="bar-p">Profesionales letrados altamente calificados y con amplia experiencia a su disposición las 24 horas del día, garantizando su satisfacción</p>
                     </div>
                     <div className="bar-container">
                         <h2 className="bar-h2">Asesoriamiento <br /> internacional</h2>
@@ -149,7 +151,7 @@ const Home = () => {
                         <p className="faq-p">
                             En primer término, las marcas son territoriales, esto es que responden a la normativa de un territorio o país determinado. <br />
                             A partir de ese concepto, sí tenemos Convenios Internacionales, como ser: <br />
-                            Convenio de Paris, y otros tratados cuales son, Acuerdo de Madrid, Tratado de la Unión Europea, Pacto Andino, los cuales con un solo pedido y el pago de las tasas de cada uno de los paises solicitados comienzan un proceso en todos ellos, más allá que el resultado de uno no obliga al de los otros.
+                            Convenio de Paris, y otros tratados cuales son, Protocolo de Madrid, Tratado de la Unión Europea, Pacto Andino, los cuales con un solo pedido y el pago de las tasas de cada uno de los paises solicitados comienzan un proceso en todos ellos, más allá que el resultado de uno no obliga al de los otros.
                         </p>
                     </AccordionDetails>
                 </Accordion>
@@ -196,10 +198,10 @@ const Home = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <p className="faq-p">
-                        Se aconseja la búsqueda previa tanto nacional como internacional.<br/>
-  Luego de la presentación de la Solicitud de Patentes, con todos los requisitos necesarios para su presentación que es diferente que en marcas, se realiza un examen primario de formalidades y de patentabilidad, transcurridos los plazo legales publica en el Boletín Oficial de Marcas.<br/>
-  Se inicia el plazo para las presentaciones de Oposiciones por terceros, sesenta días posteriores a la publicación.<br/>
-  Si el Estado de la técnica lo permite, no se presentaron oposiciones de terceros, ni hay impedimentos normativos, se resuelve concediendo la patente.
+                            Se aconseja la búsqueda previa tanto nacional como internacional.<br />
+                            Luego de la presentación de la Solicitud de Patentes, con todos los requisitos necesarios para su presentación que es diferente que en marcas, se realiza un examen primario de formalidades y de patentabilidad, transcurridos los plazo legales publica en el Boletín Oficial de Marcas.<br />
+                            Se inicia el plazo para las presentaciones de Oposiciones por terceros, sesenta días posteriores a la publicación.<br />
+                            Si el Estado de la técnica lo permite, no se presentaron oposiciones de terceros, ni hay impedimentos normativos, se resuelve concediendo la patente.
                         </p>
                     </AccordionDetails>
                 </Accordion>

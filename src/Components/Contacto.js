@@ -35,7 +35,7 @@ const Contacto = () => {
                 <div class="h-captcha" data-captcha="true"></div>
                 <TextField required name='name' id="name" label="Nombre" variant="standard" />
                 <TextField required name='email'id="email" label="Correo" variant="standard" />
-                <TextField name='phone' id="phone" label="Telefono" variant="standard" />
+                <TextField name='phone' id="phone" label="Teléfono" variant="standard" />
                 <TextField name ='message' multiline rows={3} required id="message" label="Mensaje" variant="standard" />
                 <Button variant="contained" style={buttonStyle} type="submit">
                     Enviar
